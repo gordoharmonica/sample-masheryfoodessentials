@@ -1,7 +1,6 @@
 // ********************SET YOUR API KEY HERE****************************
 // Insert your FoodEssentials API key here.
-//var apiKey = 'PLACE-YOUR-API-KEY-HERE';
-var apiKey = 'nj2yg7cybxp96r9kxrgudu5b';
+var apiKey = 'PLACE-YOUR-API-KEY-HERE';
 // *********************************************************************
 
 // Check if valid API Key
