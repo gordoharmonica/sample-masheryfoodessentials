@@ -1,0 +1,13 @@
+{
+"reponame":"sample-mashery-foodessentials",
+"title":"Mashery Foodessentials API",
+"tooltip":"[App Designer Ready] This demo app provides a way to see the Foodessentials API in action.",
+"description":"[App Designer Ready] This demo app provides a way to see the Foodessentials API in action.",
+"articleUrl":"TBD",
+"keywords":["Mashery", "jQuery Mobile", "App Designer", "Web Services API"],
+"visible" : "true",
+"apppreview":"false",
+"appname":"demo.masheryfoodessentials",
+"relname":"4.0.0",
+"type":"appdesigner"
+}
