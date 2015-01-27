@@ -36,7 +36,7 @@
     "cordovaPlugins": [
       {
         "id": "org.apache.cordova.device-motion",
-        "version": "0.2.4",
+        "version": "0.2.7",
         "selectedState": "Auto",
         "data": {},
         "paramvals": {}
@@ -50,7 +50,7 @@
       },
       {
         "id": "org.apache.cordova.media-capture",
-        "version": "0.2.8",
+        "version": "0.3.0",
         "selectedState": "Auto",
         "data": {},
         "paramvals": {}
@@ -71,35 +71,35 @@
       },
       {
         "id": "org.apache.cordova.contacts",
-        "version": "0.2.8",
+        "version": "0.2.10",
         "selectedState": "Auto",
         "data": {},
         "paramvals": {}
       },
       {
         "id": "org.apache.cordova.device",
-        "version": "0.2.5",
+        "version": "0.2.9",
         "selectedState": "Auto",
         "data": {},
         "paramvals": {}
       },
       {
         "id": "org.apache.cordova.battery-status",
-        "version": "0.2.5",
+        "version": "0.2.8",
         "selectedState": "Auto",
         "data": {},
         "paramvals": {}
       },
       {
         "id": "org.apache.cordova.file",
-        "version": "0.2.5",
+        "version": "1.1.0",
         "selectedState": "Auto",
         "data": {},
         "paramvals": {}
       },
       {
         "id": "org.apache.cordova.geolocation",
-        "version": "0.3.5",
+        "version": "0.3.7",
         "selectedState": "Auto",
         "data": {},
         "paramvals": {}
@@ -113,35 +113,35 @@
       },
       {
         "id": "org.apache.cordova.inappbrowser",
-        "version": "0.3.0",
+        "version": "0.4.0",
         "selectedState": "Auto",
         "data": {},
         "paramvals": {}
       },
       {
         "id": "org.apache.cordova.media",
-        "version": "0.2.8",
+        "version": "0.2.10",
         "selectedState": "Auto",
         "data": {},
         "paramvals": {}
       },
       {
         "id": "org.apache.cordova.dialogs",
-        "version": "0.2.5",
+        "version": "0.2.6",
         "selectedState": "Auto",
         "data": {},
         "paramvals": {}
       },
       {
         "id": "org.apache.cordova.vibration",
-        "version": "0.3.5",
+        "version": "0.3.8",
         "selectedState": "Auto",
         "data": {},
         "paramvals": {}
       },
       {
         "id": "org.apache.cordova.splashscreen",
-        "version": "0.2.5",
+        "version": "0.3.0",
         "selectedState": "Auto",
         "data": {},
         "paramvals": {}
