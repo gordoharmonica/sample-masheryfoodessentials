@@ -9,5 +9,6 @@
 "apppreview":"false",
 "appname":"demo.masheryfoodessentials",
 "relname":"4.0.0",
-"type":"appdesigner"
+"type":"appdesigner",
+"projectTypeName": "com.intel.xdk.projecttype.webapp"
 }
