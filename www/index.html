@@ -1,166 +1,215 @@
 <!DOCTYPE html>
 <!--HTML5 doctype-->
 <html>
+ <!-- content goes here-->
 
-	<head>
-		<link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-min.css">
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
-		<title>Your New Application</title>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-		<style type="text/css">
-			/* Prevent copy paste for all elements except text fields */
-			*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
-			input, textarea  { -webkit-user-select:text; }
-            body { -webkit-overflow-scrolling: touch; }
-		</style>
-		<script src="intelxdk.js"></script>
-		<script src="cordova.js"></script>
-		<script src="xhr.js"></script>
-		<script type="text/javascript">
-			var onDeviceReady=function(){
-			//hide splash screen
-			     navigator.splashscreen.hide();
-			};
-			document.addEventListener("deviceready",onDeviceReady,false);
-		</script>
-				
-		<script type="application/javascript" src="js/jquery.min.js"></script>
-		<script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
-		<script type="application/javascript" src="js/foodessentials.js"></script>
-		<script type="application/javascript" src="js/index_user_scripts.js"></script>
-		<script type="application/javascript" src="sidebar/js/jquery.event.move.js"></script>
-		<script type="application/javascript" src="sidebar/js/jquery.event.swipe.js"></script>
-		<script type="application/javascript" src="sidebar/js/sidebar.js"></script>
-		<script type="application/javascript" src="sidebar/js/swipe.js"></script>
-	</head>
+ <head>
+  <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="app_framework/css/af.ui.min.css">
+  <link rel="stylesheet" type="text/css" href="app_framework/css/icons.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+  <title>Your New Application</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <style type="text/css">
+   /* Prevent copy paste for all elements except text fields */
+   		*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+   		input, textarea  { -webkit-user-select:text; }
+  </style>
+  <script src="intelxdk.js"></script>
+  <script type="text/javascript">
+      var onDeviceReady=function(){                             // called when Cordova is ready
+          if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
+                navigator.splashscreen.hide() ;                 // hide splash screen
+          }
+      };
+document.addEventListener("deviceready", onDeviceReady, false) ;
+</script>
 
-	<body>
-		<!-- content goes here-->
-		<div class="uwrap">
-			<div class="upage" id="mainpage" data-role="page">
-				<div class="upage-outer">
-					<div class="upage-content" id="mainsub">
+  <script type="application/javascript" src="app_framework/appframework.ui.min.js"></script>
+  <script type="application/javascript" src="js/jquery.min.js"></script>
+  <script type="application/javascript" src="js/index_user_scripts.js"></script>
+  <script type="application/javascript" src="js/af_subpage.js"></script>
+ </head>
 
-						<div class="grid grid-pad urow uib_row_4 row-height-4" data-uib="layout/row" data-ver="0">
-							<div class="col uib_col_6 col-0_8-12" data-uib="layout/col" data-ver="0">
-								<div class="widget-container content-area vertical-col">
+ <body id="afui" class="android light">
 
-									<div class="widget uib_w_6 scale-image d-margins" data-uib="media/img" data-ver="0">
-										<figure class="figure-align">
-											<img src="http://content.developer.mashery.com.s3.amazonaws.com/xdk-demos/foodessentials/logo.png">
-											<figcaption data-position="bottom"></figcaption>
-										</figure>
-									</div><span class="uib_shim"></span>
-								</div>
-							</div>
-							<div class="col uib_col_5 col-0_4-12" data-uib="layout/col" data-ver="0">
-								<div class="widget-container content-area vertical-col">
+  <!-- content goes here-->
+  <div class="uwrap" id="content">
+   <div class="upage panel" id="mainpage" data-header="none" data-footer="none">
+    <div class="upage-outer">
+     <header class="container-group inner-element uib_w_1" data-uib="app_framework/header" data-ver="0" id="af-header-0">
+      <div class="widget-container wrapping-col single-centered"></div>
+      <div class="widget-container content-area horiz-area wrapping-col left"></div>
+      <div class="widget-container content-area horiz-area wrapping-col right"></div>
+     </header>
+     <div class="upage-content" id="mainsub">
 
-									<div class="widget uib_w_7 scale-image d-margins" data-uib="media/img" data-ver="0">
-										<figure class="figure-align">
-											<img src="http://content.developer.mashery.com.s3.amazonaws.com/xdk-demos/masherymade.png">
-											<figcaption data-position="bottom"></figcaption>
-										</figure>
-									</div><span class="uib_shim"></span>
-								</div>
-							</div>
-							<span class="uib_shim"></span>
-						</div>
-						<div class="grid grid-pad urow uib_row_5 row-height-5" data-uib="layout/row" data-ver="0">
-							<div class="col uib_col_7 col-0_12-12" data-uib="layout/col" data-ver="0">
-								<div class="widget-container content-area vertical-col">
+      <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_2 col-0_6-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
 
-									<div class="widget uib_w_8 d-margins foodessentials-description" data-uib="media/text" data-ver="0">
-										<div class="widget-container left-receptacle"></div>
-										<div class="widget-container right-receptacle"></div>
-										<div>
-											<p>FoodEssentials specializes in aggregating food label data sources and processing raw label information to assign additive, allergen, ingredient, and nutrient properties to each product. This sample app uses the FoodEssentials API to get food
-												product and label information.</p>
-											<p>To learn more about the FoodEssentials API and get your free API key, <a href="http://developer.foodessentials.com" target="_blank" rel="external">click here.</a>
-											</p>
-										</div>
-									</div><span class="uib_shim"></span>
-								</div>
-							</div>
-							<span class="uib_shim"></span>
-						</div>
-						<div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
-							<div class="col uib_col_9 col-0_8-12" data-uib="layout/col" data-ver="0">
-								<div class="widget-container content-area vertical-col">
-									<div class="table-thing with-label widget uib_w_1 d-margins" data-uib="jquery_mobile/input" data-ver="0">
-										<label class="narrow-control" for="search_query"></label>
-										<input class="wide-control" placeholder="e.g. chicken pot pie" type="text" value="chicken pot pie" id="search_query">
-									</div><span class="uib_shim"></span>
-								</div>
-							</div>
-							<div class="col uib_col_1 col-0_4-12" data-uib="layout/col" data-ver="0">
-								<div class="widget-container content-area vertical-col">
+         <div class="widget uib_w_3 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+           <img src="http://content.developer.mashery.com.s3.amazonaws.com/xdk-demos/edmunds/edmunds_logo.png">
 
-									<a class="widget uib_w_5 d-margins search_button" data-uib="jquery_mobile/button" data-ver="0" data-role="button">Search</a><span class="uib_shim"></span>
-								</div>
-							</div>
-							<span class="uib_shim"></span>
-						</div>
-					</div>
-					<!-- /upage-content -->
+           <figcaption data-position="bottom"></figcaption>
+          </figure>
+         </div>
+         <span class="uib_shim"></span>
+        </div>
+       </div>
+       <div class="col uib_col_1 col-0_6-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
 
-				</div>
-				<!-- /upage-outer -->
+         <div class="widget uib_w_4 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+           <img src="http://content.developer.mashery.com.s3.amazonaws.com/xdk-demos/masherymade.png">
 
-			</div>
-			<div class="upage" id="ingredients" data-role="page" data-add-back-btn="true">
-				<div class="upage-outer">
-					<div data-role="header" class="container-group inner-element uib_w_4" data-uib="jquery_mobile/header" data-ver="0" id="ingredients_header" data-position="fixed">
-						<a href="#search_results" data-icon="back" class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>
-						<h1>Ingredients</h1>
-						<div class="widget-container wrapping-col single-centered"></div>
-						<div class="widget-container content-area horiz-area wrapping-col left"></div>
-						<div class="widget-container content-area horiz-area wrapping-col right"></div>
-					</div>
-					<div id="ingredientssub" class="upage-content ">
+           <figcaption data-position="bottom"></figcaption>
+          </figure>
+         </div>
+         <span class="uib_shim"></span>
+        </div>
+       </div>
+       <span class="uib_shim"></span>
+      </div>
 
-						<div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
-							<div class="col uib_col_4 col-0_12-12" data-uib="layout/col" data-ver="0">
-								<div class="widget-container content-area vertical-col" id="ingredients_content">
-									<h3 id="product_name"></h3>
-									<div id="ingredients_list"></div>
-								</div>
-							</div>
-							<span class="uib_shim"></span>
-						</div>
-					</div>
-				</div>
-				<!-- /upage-outer -->
-			</div>
-			<div class="upage" id="search_results" data-role="page">
-				<div class="upage-outer">
-					<div data-role="header" class="container-group inner-element uib_w_3" data-uib="jquery_mobile/header" data-ver="0" id="search_results_header" data-position="fixed">
-						<a href="#mainpage" data-icon="back" class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>
-						<h1>Search Results</h1>
-						<div class="widget-container wrapping-col single-centered"></div>
-						<div class="widget-container content-area horiz-area wrapping-col left"></div>
-						<div class="widget-container content-area horiz-area wrapping-col right"></div>
-					</div>
-					<div id="search_resultssub" class="upage-content ">
+      <div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_3 col-0_12-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
 
-						<div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
-							<div class="col uib_col_3 col-0_12-12 search_results" data-uib="layout/col" data-ver="0">
-								<div class="widget-container content-area vertical-col" id="search_results_content">
-									<span class="uib_shim"></span>
-								</div>
-							</div>
-							<span class="uib_shim"></span>
-						</div>
-					</div>
-				</div>
-				<!-- /upage-outer -->
-			</div>
-			<!-- /upage -->
+         <div class="widget uib_w_23 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>This sample app uses the Edmunds.com API, a platform for automotive data. Access vehicle specs, pricing, service bulletins and dealership content.
+            <br>
+            <br>Get your free API key at <span onclick="window.open('http://developer.edmunds.com','_blank');" style="text-decoration:underline;">developer.edmunds.com</span> right now.</p>
+          </div>
+         </div><span class="uib_shim"></span>
+        </div>
+       </div>
+       <span class="uib_shim"></span>
+      </div>
 
-		</div>
-		<!-- /uwrap -->
-	</body>
+      <div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_5 col-0" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
+
+         <div class="table-thing with-label widget uib_w_7 d-margins" data-uib="app_framework/input" data-ver="0">
+
+          <input id="make" class="wide-control" placeholder="Make" type="text">
+         </div>
+         <div class="table-thing with-label widget uib_w_8 d-margins" data-uib="app_framework/input" data-ver="0">
+
+          <input id="model" class="wide-control" placeholder="Model" type="text">
+         </div>
+         <div class="table-thing with-label widget uib_w_9 d-margins" data-uib="app_framework/input" data-ver="0">
+
+          <input id="year" class="wide-control" placeholder="Year" type="text">
+         </div><a class="button widget uib_w_10 d-margins icon right" data-uib="app_framework/button" data-ver="0">Go</a>
+         <span class="uib_shim"></span>
+        </div>
+       </div>
+
+       <span class="uib_shim"></span>
+      </div>
+     </div>
+     <div id="review" class="upage-content hidden">
+
+      <div class="grid grid-pad urow uib_row_5 row-height-5" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_7 col-0_6-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
+
+         <div class="widget uib_w_19 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+           <img src="http://content.developer.mashery.com.s3.amazonaws.com/xdk-demos/edmunds/edmunds_logo.png">
+           <figcaption data-position="bottom"></figcaption>
+          </figure>
+         </div>
+         <span class="uib_shim"></span>
+        </div>
+       </div>
+       <div class="col uib_col_8 col-0_6-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
+
+         <div class="widget uib_w_20 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+           <img src="http://content.developer.mashery.com.s3.amazonaws.com/xdk-demos/masherymade.png">
+           <figcaption data-position="bottom"></figcaption>
+          </figure>
+         </div>
+         <span class="uib_shim"></span>
+        </div>
+       </div>
+       <span class="uib_shim"></span>
+      </div>
+
+      <div class="grid grid-pad urow uib_row_4 row-height-4" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_6 col-0_12-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
+
+         <div class="widget uib_w_18 d-margins big" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <h2>Ratings &amp; Reviews</h2>
+          </div>
+         </div>
+         <div class="widget uib_w_14 d-margins" data-uib="media/text" data-ver="0" id="makebox">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Make</p>
+          </div>
+         </div>
+         <div class="widget uib_w_15 d-margins" data-uib="media/text" data-ver="0" id="modelbox">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Model</p>
+          </div>
+         </div>
+         <div class="widget uib_w_16 d-margins" data-uib="media/text" data-ver="0" id="yearbox">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Year</p>
+          </div>
+         </div>
+         <div class="widget uib_w_13 d-margins" data-uib="media/text" data-ver="0" id="reviewbox">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Average Review Score</p>
+          </div>
+         </div>
+         <div class="widget uib_w_22 d-margins" data-uib="media/text" data-ver="0" id="recentbox">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Edmunds Reviews</p>
+          </div>
+         </div>
+         <a class="button widget uib_w_17 d-margins half icon left" data-uib="app_framework/button" data-ver="0">Back</a><span class="uib_shim"></span>
+        </div>
+       </div>
+       <span class="uib_shim"></span>
+      </div>
+     </div>
+     <!-- /upage-content -->
+
+    </div>
+    <!-- /upage-outer -->
+
+   </div>
+   <!-- /upage -->
+
+  </div>
+  <!-- /uwrap -->
+  <script type="application/javascript" src="api.js"></script>
+ </body>
 
 </html>

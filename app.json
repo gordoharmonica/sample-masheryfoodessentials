@@ -1,13 +1,16 @@
 {
-"reponame":"sample-masheryfoodessentials",
-"title":"Mashery Foodessentials API",
-"tooltip":"[App Designer Ready] This demo app provides a way to see the Foodessentials API in action.",
-"description":"[App Designer Ready] This demo app provides a way to see the Foodessentials API in action.",
-"articleUrl":"TBD",
-"keywords":["Mashery", "jQuery Mobile", "App Designer", "Web Services API"],
-"visible" : "true",
-"apppreview":"false",
-"appname":"demo.masheryfoodessentials",
-"relname":"4.0.0",
-"type":"appdesigner"
+    "reponame": "sample-masheryedmunds",
+    "title": "Mashery Edmunds",
+    "abbr": "MasheryEdmunds",
+    "tooltip": "A demo app that features the Edmunds API, part of the Mashery API Network",
+    "description": "This demo app provides a way to see the Edmunds API in action.",    
+    "articleUrl": "http://software.intel.com/html5/articles/integrating-apis-with-xdk-edmunds-sample-app",
+    "keywords": ["Mashery", "App Framework", "Web Services API", "App Designer"],
+    "relname": "4.0.0",
+    "visible": "true",
+    "appname": "demo.masheryedmunds",
+    "apppreview": "false",
+    "type":"appdesigner",
+  	"projectTypeName": "com.intel.xdk.projecttype.webapp"
 }
+

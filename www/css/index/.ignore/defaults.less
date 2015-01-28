@@ -15,8 +15,6 @@
 
 body {
   margin: 0px;
-  background-color: #ffffff;
-  overflow-y:hidden;
 }
 
 /* grid */
@@ -99,24 +97,14 @@ body:not(#afui) {
 /* position relative works fine. but fixed can be elected as well */
 /* .upage-content, .upage-outer { position: fixed; height:100%; } */
 
-.upage { overflow-x: hidden; }
+.upage{ overflow-x: hidden; }
 .upage-content { z-index:1; }
 #afui .upage { padding: 0; }
 
 /* sidebars and crossbars */
 
-.uib_sidebar {
-  position: fixed;
-  height: 100%;
-  top: 0px;
-}
-
-.uib_crossbar {
-  position: fixed;
-  width: 100%;
-  left: 0px;
-}
-
+.uib_sidebar  { position:absolute;  height:100%; top:0px; }
+.uib_crossbar { position:absolute;  width:100%;  left:0px; }
 .leftbar, .rightbar        {  z-index:2; }
 .reveal.leftbar  { left:0px;  z-index:0; }
 .reveal.rightbar { right:0px; z-index:0;}
@@ -128,15 +116,6 @@ body:not(#afui) {
 .botbar      { z-index:3; position:fixed; }
 .botbar.oh,
 .topbar.oh   { z-index:4; }
-
-.sidebar-content {
-  height: 100%;
-  overflow-y: auto;
-  position: relative;
-  margin: 0;
-}
+.sidebar-content { position:relative; margin:0; }
 
 .sidebar-thumb{ position:relative; margin:0; /* background-image:url('images/gripper.png'); */}
-
-//service method support
-.template { display:none !important; }
