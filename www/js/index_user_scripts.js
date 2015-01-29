@@ -6,19 +6,12 @@
  */
  function register_event_handlers()
  {
+    checkKeyValidity();
         
-        $(document).on("click", ".uib_w_10", function(evt)
+        $(document).on("click", ".uib_w_5", function(evt)
         {
-            searchMake();
+          search();
         });
-        $(document).on("click", ".uib_w_17", function(evt)
-        {
-            history.back();
-        });
-//        $(document).on("click", "recentbox.text()", function(evt)
-//        {
-//            window.open("http://www.edmunds.com/volkswagen/tiguan/2010/consumer-reviews/review.html?style=101204317&reviewId=794778859");    
-//        });
 }
  $(document).ready(register_event_handlers);
 })();
