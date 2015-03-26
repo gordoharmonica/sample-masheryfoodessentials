@@ -1,127 +1,52 @@
-FOODESSENTIALS API DEMO APP
-==================================================================
-Created lovingly for the developer community by Mashery.
-http://www.mashery.com
-http://developer.mashery.com
+Blank HTML App Designer Template for Building Packaged Mobile Web Apps
+======================================================================
 
-Intel(R) XDK
--------------------------------------------
-This sample is part of the Intel(R) XDK. 
-Please sign up at http://software.intel.com/en-us/html5. 
+Copyright © 2012-2015, Intel Corporation. All rights reserved.
 
-Application Files
------------------
-* index.html
-* readme.md
-* css/*
-* js/*
-* jqm/*
+See [LICENSE.md](<LICENSE.md>) for license terms and conditions.
 
-Copyright (c) 2012-2013, Intel Corporation. All rights reserved.
+Use this template as a starting point for an Intel XDK App Designer project that
+will be distributed as a *packaged mobile web app*. The file named `init-dev.js`
+included as part of this project contains init code that generates an
+`app.Ready` event; which is used as a way to normalize how App Designer starts
+its own code. This technique allows App Designer to use a standard init sequence
+regardless of the specific package type (a *packaged web app* or a *Cordova web
+app*).
 
-Redistribution and use in source and binary forms, with or without modification, 
-are permitted provided that the following conditions are met:
+The `icon.png` and `screenshot.png` files are not required by your project. They
+are included for use by the Intel XDK template/demo panel and have no use within
+a real app. You can safely delete them from your project directory.
 
-- Redistributions of source code must retain the above copyright notice, 
-  this list of conditions and the following disclaimer.
+You can build a *packaged Cordova web app* from this template that can be
+submitted to a store using the "Cordova Hybrid Mobile App Platforms” build tiles
+(for Crosswalk, Android, iOS and Windows). The `intelxdk.config.additions.xml`
+file can be used to include options that control your *packaged Cordova web app*
+builds. For example, you can set the splash screen display time for a packaged
+Android or Crosswalk Cordova app using this file.
 
-- Redistributions in binary form must reproduce the above copyright notice, 
-  this list of conditions and the following disclaimer in the documentation 
-  and/or other materials provided with the distribution.
+Do not be alarmed if you see a "*Failed to load resource:
+net::ERR\_FILE\_NOT\_FOUND*" message caused by the `cordova.js` script in your
+`index.html` file. The `cordova.js` script is *only required* if you choose to
+convert your "Standard HTML5 Project" into a "Standard HTML5 + Cordova Project."
 
-- Neither the name of Intel Corporation nor the names of its contributors 
-  may be used to endorse or promote products derived from this software 
-  without specific prior written permission.
+You can:
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
-THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
-ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE 
-LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
-CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE 
-GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) 
-HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT 
-LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT 
-OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-   safely ignore the "*Failed to load resource: net::ERR\_FILE\_NOT\_FOUND*"
+    error message
 
-jQuery Mobile
------------------------------------------------------------------------------
-* source:  http://blog.jquery.com/2010/02/19/jquery-142-released/
-* license: https://jquery.org/license/
+or
 
-SYNOPSIS
-==================================================================
-This demo App provides a way to see the FoodEssentials API in action. 
-It is built using Intel's Cross Platform Development Kit (XDK) 
-that lets you create mobile apps for smartphones and tablets using
-standard web languages (HTML5, CSS, and JavaScript).
+-   comment out this script line if you will not be converting your project into
+    a Cordova app that uses Cordova APIs.
 
+The `cordova.js` script will be needed if you choose to convert your project to
+a *Cordova project* and enhance your app with Cordova APIs. It is not required
+to build a *Cordova packaged web app* for distribution via the Android, iOS and
+Windows stores *if that app does not utilize Cordova APIs*.
 
-WHAT DOES THIS APP DO?
-==================================================================
-Uses the FoodEssentials API to get Food Product information: Product Name, Label Array and Ingredients.
-
-GETTING STARTED
-==================================================================
-You will need the following to get started -
-
-1. Intel's XDK. Free Download - http://xdk-software.intel.com/
-2. A FoodEssentials API key (Register at http://developer.foodessentials.com/member/register).
-
-
-OBTAINING THE API KEY
-==================================================================
-Before you can begin using this app, you will need to get an API key 
-from FoodEssentials at http://developer.foodessentials.com/member/register. This will also 
-give you a Single Sign-On Mashery ID with access to many APIs.
-
-
-SETTING UP THE API KEY IN THIS APP
-==================================================================
-Once you have obtained your API key, assign the API key to the 
-var client_id on line 3 of the file api.js, like so -
-
-<pre>
-	var client_id = 'PLACE-YOUR-API-KEY-HERE';
-</pre>
-
-
-ABOUT THE FoodEssentials API
-==================================================================
-FoodEssentials' APIs allow developers to access food information: Product Search, Product Name, Product Score, Label Array, and more.
-
-In this demo app we utilize the FoodEssentials API for Product Search, Label Array, and Ingredients information. In the source code you can observe how easy it is to make an API call, parse the 
-API response and return the information back to the end-user. 
-
-Get detailed information about the FoodEssentials APIs at 
-http://developer.foodessentials.com/api
-
-
-FoodEssentials INTERACTIVE API DOCUMENTATION
-==================================================================
-To learn more about the data set provided by FoodEssentials' APIs, visit
-their interactive documentation at http://developer.foodessentials.com/io-docs
-
-
-ABOUT THE MASHERY API NETWORK
-==================================================================
-The Mashery API Network (http://developer.mashery.com) is an open
-data commons of over 40 RESTful APIs that developers can access 
-with their Mashery ID.  
-
-Mashery is the world's leading API management service provider, helping 
-companies provide the best API experience for developers, as well as 
-the most advanced API management and reporting tools to our clients. 
-
-
-EXPLORE MORE APIS
-==================================================================
-Check out Mashery's API Network at http://developer.mashery.com/apis
-to explore other awesome APIs including Beats Music, Edmunds.com, USA TODAY, 
-Rotten Tomatoes, Best Buy, Rovi and more. 
-
-
-SUPPORT
-==================================================================
-If you have any questions or need any help obtaining an API key, 
-you can reach out to us at: developer-relations@mashery.com
+This blank template does not require any Cordova APIs. If you would like to add
+Cordova APIs to your application (via Cordova plugins) you must first convert
+your project into a Cordova project. You can do this by clicking the Cordova
+icon in the *Project Info* section on the **Projects** tab. Or, you can create a
+new Cordova project using a Cordova blank template or a Cordova demo or sample
+app as a starting point.
