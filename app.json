@@ -5,7 +5,7 @@
    "appPreview" : false,
    "description" : "[App Designer Ready] This demo app provides a way to see the Foodessentials API in action.",
    "repoName" : "sample-masheryfoodessentials",
-   "appName" : "demo.masheryfoodessentials",
+   "appName" : "FoodEssentialsMashery",
    "visible" : true,
    "tooltip" : "[App Designer Ready] This demo app provides a way to see the Foodessentials API in action.",
    "type" : "appdesigner",
