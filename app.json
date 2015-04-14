@@ -1,7 +1,7 @@
 {
    "relName" : "4.0.0",
    "articleUrl" : "https://software.intel.com/en-us/articles/integrating-apis-with-xdk-foodessentials-sample-app",
-   "projectTypeName" : "com.intel.xdk.projecttype.webapp",
+   "projectTypeName" : "com.intel.xdk.projecttype.jsapp",
    "appPreview" : false,
    "description" : "[App Designer Ready] This demo app provides a way to see the Foodessentials API in action.",
    "repoName" : "sample-masheryfoodessentials",
