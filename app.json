@@ -1,14 +1,20 @@
 {
-"reponame":"sample-masheryfoodessentials",
-"title":"Mashery Foodessentials API",
-"tooltip":"[App Designer Ready] This demo app provides a way to see the Foodessentials API in action.",
-"description":"[App Designer Ready] This demo app provides a way to see the Foodessentials API in action.",
-"articleUrl":"https://software.intel.com/en-us/articles/integrating-apis-with-xdk-foodessentials-sample-app",
-"keywords":["Mashery", "jQuery Mobile", "App Designer", "Web Services API"],
-"visible" : "true",
-"apppreview":"false",
-"appname":"demo.masheryfoodessentials",
-"relname":"4.0.0",
-"type":"appdesigner",
-"projectTypeName": "com.intel.xdk.projecttype.webapp"
+   "relName" : "4.0.0",
+   "articleUrl" : "https://software.intel.com/en-us/articles/integrating-apis-with-xdk-foodessentials-sample-app",
+   "projectTypeName" : "com.intel.xdk.projecttype.webapp",
+   "appPreview" : false,
+   "description" : "[App Designer Ready] This demo app provides a way to see the Foodessentials API in action.",
+   "repoName" : "sample-masheryfoodessentials",
+   "appName" : "FoodEssentialsMashery",
+   "visible" : true,
+   "tooltip" : "[App Designer Ready] This demo app provides a way to see the Foodessentials API in action.",
+   "type" : "appdesigner",
+   "title" : "Mashery Foodessentials API",
+   "mobile" : false,
+   "keywords" : [
+      "Mashery",
+      "jQuery Mobile",
+      "App Designer",
+      "Web Services API"
+   ]
 }
