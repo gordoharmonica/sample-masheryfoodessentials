@@ -1,19 +1,27 @@
 {
     "project": {
-        "projectSettingsVersion": "1.2",
+        "projectSettingsVersion": "2.0.0",
         "creationData": {
             "type": "App Designer",
             "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-            "src": "https://appcenter.html5tools-software.intel.com/api/v2.0/redirect/projectrenderers/release-2015-ww13/webapp/samples-masheryfoodessentials/sample.zip",
+            "src": "jsapp/sample-masheryfoodessentials/sample.zip",
             "projectGuid": "00000000-0000-0000-0000-000000000000",
-            "lastModifiedDate": 1428963239663,
-            "creationDate": 1428959601872
+            "lastModifiedDate": 1440125996381,
+            "creationDate": 1440125972842
         },
         "XDK-app-designer": "true",
         "sourceDirectory": "www",
         "startFile": "index.html",
         "projectFiles": {},
-        "projectDirectories": {},
+        "projectDirectories": {
+            "www/xdk": {
+                "settings": {
+                    "project": {
+                        "XDK-generated": "true"
+                    }
+                }
+            }
+        },
         "libraries": [],
         "serviceMethods": [],
         "cordovaPluginsDirectory": "plugins",
@@ -42,16 +50,30 @@
                 "data": {},
                 "paramvals": {},
                 "dependsOn": [],
-                "dependedBy": []
+                "dependedBy": [],
+                "originType": "cordova.io",
+                "origin": "cordova-plugin-device",
+                "permissions": {},
+                "topLevel": true,
+                "gitref": "",
+                "name": "Device",
+                "description": "Cordova Device Plugin"
             },
             {
-                "id": "org.apache.cordova.splashscreen",
+                "id": "cordova-plugin-splashscreen",
                 "version": "?",
                 "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
                 "dependsOn": [],
-                "dependedBy": []
+                "dependedBy": [],
+                "originType": "cordova.io",
+                "origin": "cordova-plugin-splashscreen",
+                "permissions": {},
+                "topLevel": true,
+                "gitref": "",
+                "name": "Splashscreen",
+                "description": "Cordova Splashscreen Plugin"
             }
         ],
         "buildConfigurations": {
@@ -65,7 +87,7 @@
                     "android-installLocation": "auto"
                 },
                 "isActive_": true,
-                "appName_": "MasheryFoodEssentials",
+                "appName_": "Mashery-Food-Essentials",
                 "appID_": "com.intel.xdk.masheryfoodessentials",
                 "appAccess_": {
                     "mode": "legacy",
@@ -80,7 +102,6 @@
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
-                "iosProvs_": [],
                 "cordovaCLIVersion_": "?",
                 "crosswalkVersion_": "?",
                 "appVersion_": "0.0.1",
@@ -98,7 +119,7 @@
                     "android-installLocation": "auto"
                 },
                 "isActive_": true,
-                "appName_": "MasheryFoodEssentials",
+                "appName_": "Mashery-Food-Essentials",
                 "appID_": "com.intel.xdk.masheryfoodessentials",
                 "appAccess_": {
                     "mode": "legacy",
@@ -113,7 +134,6 @@
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
-                "iosProvs_": [],
                 "cordovaCLIVersion_": "?",
                 "crosswalkVersion_": "?",
                 "appVersion_": "0.0.1",
@@ -130,7 +150,7 @@
                     "ios-configuration": "adhoc"
                 },
                 "isActive_": true,
-                "appName_": "MasheryFoodEssentials",
+                "appName_": "Mashery-Food-Essentials",
                 "appID_": "com.intel.xdk.masheryfoodessentials",
                 "appAccess_": {
                     "mode": "legacy",
@@ -161,7 +181,7 @@
                     "windows-publisher-id": ""
                 },
                 "isActive_": true,
-                "appName_": "MasheryFoodEssentials",
+                "appName_": "Mashery-Food-Essentials",
                 "appID_": "com.intel.xdk.masheryfoodessentials",
                 "appAccess_": {
                     "mode": "legacy",
@@ -176,7 +196,6 @@
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
-                "iosProvs_": [],
                 "cordovaCLIVersion_": "?",
                 "crosswalkVersion_": "?",
                 "appVersion_": "0.0.1",
@@ -189,7 +208,7 @@
                 "name_": "WebApp",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "MasheryFoodEssentials",
+                "appName_": "Mashery-Food-Essentials",
                 "appID_": "xdk.intel.blank.ad.template",
                 "appAccess_": {
                     "mode": "legacy",
@@ -214,7 +233,7 @@
                 "name_": "Firefox",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "MasheryFoodEssentials",
+                "appName_": "Mashery-Food-Essentials",
                 "appID_": "xdk.intel.blank.ad.template",
                 "appAccess_": {
                     "mode": "legacy",
@@ -239,7 +258,7 @@
                 "name_": "Chrome",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "MasheryFoodEssentials",
+                "appName_": "Mashery-Food-Essentials",
                 "appID_": "xdk.intel.blank.ad.template",
                 "appAccess_": {
                     "mode": "legacy",
@@ -264,7 +283,7 @@
                 "name_": "Facebook",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "MasheryFoodEssentials",
+                "appName_": "Mashery-Food-Essentials",
                 "appID_": "xdk.intel.blank.ad.template",
                 "appAccess_": {
                     "mode": "legacy",
@@ -311,6 +330,7 @@
         },
         "gameAssetDirectory": "asset",
         "gameMetadata": {},
-        "projectTags": []
+        "projectTags": [],
+        "testDirectory": "test"
     }
 }
